@@ -56,3 +56,59 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+/* Global page styles */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 40px;
+  color: #000;
+}
+
+/* Headings */
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #5a2ea6;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 800px;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/* Header row */
+th {
+  background-color: #ffd6de;
+  font-weight: bold;
+}
+
+/* Zebra striping (optional but nice) */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ---- Hide Record ID column ---- */
+/* 1st column = Record ID */
+th:first-child,
+td:first-child {
+  display: none;
+}
+
