@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title= title
+    link(rel="stylesheet" href="/css/style.css")
+  body
+    .container
+      h1 Pets (Custom Object)
+
+      a.button(href="/update-cobj") Add to this table
+
+      if errorMessage
+        .error
+          p= errorMessage
+
+table
+  thead
+    tr
+      th Record ID
+      th Created
+      th Name
+      th Bio
+      th Species
+  tbody
+    if records.length === 0
+      tr
+        td(colspan="5") No records found.
+    else
+      each r in records
+        tr
+          td= r.id
+          td= r.createdate
+          td= r.name
+          td= r.bio
+          td= r.species
+
